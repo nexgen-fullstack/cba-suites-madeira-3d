@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Walk through CBA Suites Madeira · 3D tour</title>
+<meta name="description" content="Walk through CBA Suites Madeira in 3D, made from real photographs: lobby, sea-view suite, terrace, bedrooms, duplex and the rooftop pool above Funchal.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0d14">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@300,400,500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/h-lobby-1600.webp">
+<link rel="stylesheet" href="assets/css/tour.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"}}</script>
+</head>
+<body>
+<canvas id="scene" aria-label="3D walk-through made from photographs of the hotel"></canvas>
+<div class="t-grain" aria-hidden="true"></div>
+
+<header class="t-bar">
+  <a class="t-brand" href="index.html"><span>CBA Suites</span><em>Madeira</em></a>
+  <nav class="t-chapters" id="t-chapters" aria-label="Chapters"></nav>
+  <a class="t-chip t-book" href="https://www.booking.com/hotel/pt/cba-suits.html" target="_blank" rel="noopener" data-t="book">Book a suite</a>
+</header>
+
+<div class="t-hotspots" id="t-hotspots"></div>
+
+<aside class="t-card" id="t-card" aria-live="polite">
+  <p class="t-kicker" data-t="kicker">Walk through CBA Suites Madeira</p>
+  <h1 id="t-title">Lobby</h1>
+  <p class="t-text" id="t-text"></p>
+  <p class="t-count"><span id="t-count">01</span> / <span id="t-total">17</span></p>
+</aside>
+
+<div class="t-ctrl">
+  <button class="t-round" id="t-prev" aria-label="Back"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+  <button class="t-auto" id="t-auto"><i></i><span data-t="auto">Walk me through</span></button>
+  <button class="t-round" id="t-next" aria-label="Next"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+</div>
+<div class="t-progress"><b id="t-bar"></b></div>
+<p class="t-hint" id="t-hint"></p>
+
+<div class="t-loader" id="t-loader"><span data-t="loading">Opening the doors…</span><i><b id="t-prog"></b></i></div>
+
+<script src="assets/js/tour-i18n.js"></script>
+<script type="module" src="assets/js/tour.js"></script>
+</body>
+</html>
